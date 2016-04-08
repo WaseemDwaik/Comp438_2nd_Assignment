@@ -45,6 +45,10 @@ public class MainActivity extends AppCompatActivity {//Variables
         if (!mainScreen.getText().toString().equals("")) {
             try {
                 mem = Double.parseDouble(mainScreen.getText().toString());
+                num1 = Double.NaN;
+                num2 = Double.NaN;
+                operation = '@';
+                mainScreen.setText("");
             } catch (Exception ex) {
             }
         }
